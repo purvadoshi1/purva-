@@ -1,0 +1,29 @@
+
+The error message indicates that you don't have permission to push to the repository. Here are a few steps you can take to resolve this issue:
+
+Check Repository Permissions:
+
+Make sure that your GitHub account (PHEONIX055) has the necessary permissions to push to the repository purvadoshi1/purva1devops.git. You may need to be added as a collaborator if it's not your repo.
+Verify Authentication:
+
+Ensure that you're authenticated correctly. You can try logging out and back into your GitHub account or using a personal access token (PAT) if you're using HTTPS.
+Use SSH Instead:
+
+If you have SSH set up, you might prefer using the SSH URL for the repository instead of HTTPS. You can change the remote URL with:
+bash
+Copy code
+git remote set-url origin git@github.com:purvadoshi1/purva1devops.git
+Check Your Git Configuration:
+
+Make sure your Git user email and name are set correctly:
+bash
+Copy code
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+Clear Cached Credentials:
+
+If you have cached old credentials, you might need to clear them. You can do this using:
+bash
+Copy code
+git credential-cache exit
+After making these changes, try pushing again. If you still encounter issues, please provide more context or error messages for further assistance!
